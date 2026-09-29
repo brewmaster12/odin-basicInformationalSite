@@ -20,6 +20,12 @@ const server = http.createServer((req, res) => {
     }
 
     fs.readFile(file, (err, data) => {
+        if (err) {
+            res.writeHead(500, { 'Content-Type': 'text/plain' });
+            res.end('Internal Server Error');
+            return;
+        }
+
         res.writeHead(status, { 'Content-Type': 'text/html' });
         res.write(data);
         res.end();
