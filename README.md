@@ -24,3 +24,7 @@ Source: [The Odin Project - Basic Informational Site](https://www.theodinproject
     
     404.html should display any time the user tries to go to a page not listed above.
 
+
+Source: [The Odin Project - Introduction to Express](https://www.theodinproject.com/lessons/node-path-nodejs-introduction-to-express)
+
+1. Go back to your Basic Informational Site project, install Express and rewrite the project using it! You should be able to do most of this with just a few app.get()s.
